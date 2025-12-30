@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KbfL9aRCRLn805I8DPBQItmeEoVMHEj3eVwDk84ztnU=",
+  "Source": "ScanEventService",
+  "BasePath": "_content/ScanEventService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
