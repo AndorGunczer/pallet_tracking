@@ -10,6 +10,7 @@ public class ScanEvent
     public Guid PalletId { get; set; }
     public string PalletExternalName { get; set; }
     public string PalletDescription { get; set; }
+    public int Quantity { get; set; }
     public string TargetLocation { get; set; }
     public Guid ScannerId { get; set; }
     public ScanType Type { get; set; }   // ← THIS is the key addition
@@ -30,14 +31,36 @@ public class ScanEvent
             throw new ArgumentNullException(nameof(dto));
 
         // 3. Create valid domain object
-        return new ScanEvent
+        switch (dto.Type)
         {
-            PalletExternalName = dto.PalletName,
-            PalletDescription = dto.PalletDescription,
-            Type = dto.Type,
-            TargetLocation = dto.TargetLocation,
-            EventTime = dto.EventTime,
-            Payload = dto.Payload?.Clone()
-        };
+            case ScanType.Infeed:
+            {
+                return new ScanEvent
+                {
+                    PalletExternalName = dto.PalletName,
+                    PalletDescription = dto.PalletDescription,
+                    Type = dto.Type,
+                    Quantity = dto.Quantity,
+                    TargetLocation = dto.TargetLocation,
+                    EventTime = dto.EventTime,
+                    Payload = dto.Payload?.Clone()
+                };
+            } break;
+            case ScanType.Outfeed:
+            {
+                return new ScanEvent
+                {
+                    PalletExternalName = dto.PalletName,
+                    PalletDescription = dto.PalletDescription,
+                    Type = dto.Type,
+                    Quantity = dto.Quantity,
+                    TargetLocation = dto.TargetLocation,
+                    EventTime = dto.EventTime,
+                    Payload = dto.Payload?.Clone()
+                };
+            } break;
+        }
+
+        return null;
     }
 }

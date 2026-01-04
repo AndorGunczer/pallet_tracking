@@ -20,6 +20,7 @@ builder.Services.AddScoped<ScanWorkflow>();
 builder.Services.AddScoped<IScanProcessor, InfeedProcessor>();
 builder.Services.AddScoped<IScanProcessor, OutfeedProcessor>();
 builder.Services.AddScoped<IPalletInfeedService, PalletInfeedService>();
+builder.Services.AddScoped<IPalletOutfeedService, PalletOutfeedService>();
 builder.Services.AddSingleton<IKafkaProducer, KafkaProducer>(); // implementiere
 // builder.Services.AddStackExchangeRedisCache(options =>
 // {

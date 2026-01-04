@@ -138,3 +138,4 @@
 /Users/andorgunczer/WORK/PERSONAL/pallet-tracker/services/scan-event-service/src/ScanEventService/ScanEventService/obj/Debug/net8.0/ScanEventService.genruntimeconfig.cache
 /Users/andorgunczer/WORK/PERSONAL/pallet-tracker/services/scan-event-service/src/ScanEventService/ScanEventService/obj/Debug/net8.0/ref/ScanEventService.dll
 /Users/andorgunczer/WORK/PERSONAL/pallet-tracker/services/scan-event-service/src/ScanEventService/ScanEventService/bin/Debug/net8.0/appsettings.json
+/Users/andorgunczer/WORK/PERSONAL/pallet-tracker/services/scan-event-service/src/ScanEventService/ScanEventService/obj/Debug/net8.0/ScanEventService.sourcelink.json

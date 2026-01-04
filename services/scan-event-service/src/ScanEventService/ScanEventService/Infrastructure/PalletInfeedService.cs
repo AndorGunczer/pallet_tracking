@@ -20,7 +20,9 @@ public class PalletInfeedService : IPalletInfeedService
         {
             Name = scan.PalletExternalName,
             Description = scan.PalletDescription,
-            PalletLocationId = location.Id
+            PalletLocationId = location.Id,
+            Quantity = scan.Quantity,
+            CreatedAt =  DateTime.UtcNow
         };
         
         if (location == null)

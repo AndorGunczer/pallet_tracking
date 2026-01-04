@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ScanEventService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9dfec7538a4f7463d50f3ab88857ca8bccb0fa32")]
 [assembly: System.Reflection.AssemblyProductAttribute("ScanEventService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ScanEventService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
